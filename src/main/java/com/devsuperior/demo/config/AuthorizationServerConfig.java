@@ -81,7 +81,7 @@ public class AuthorizationServerConfig {
 
 		http.oauth2ResourceServer(oauth2ResourceServer -> oauth2ResourceServer.jwt(Customizer.withDefaults()));
 		// @formatter:on
-
+		
 		return http.build();
 	}
 
@@ -96,7 +96,7 @@ public class AuthorizationServerConfig {
 	}
 
 	@Bean
-	public PasswordEncoder passwordEncoder() {
+	public PasswordEncoder passwordEncoder() { 
 		return new BCryptPasswordEncoder();
 	}
 

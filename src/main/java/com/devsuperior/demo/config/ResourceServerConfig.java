@@ -77,7 +77,6 @@ public class ResourceServerConfig {
 		source.registerCorsConfiguration("/**", corsConfig);
 		return source;
 	}
-
 	@Bean
 	FilterRegistrationBean<CorsFilter> corsFilter() {
 		FilterRegistrationBean<CorsFilter> bean = new FilterRegistrationBean<>(
